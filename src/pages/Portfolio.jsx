@@ -48,9 +48,9 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* ── CATEGORY BAR — sticky, scrolls with page ── */}
-      <div className="sticky top-[68px] z-20 bg-white/95 backdrop-blur-xl border-b border-black/[0.05] shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center gap-2 overflow-x-auto scrollbar-none">
+      {/* ── CATEGORY BAR — inline, scrolls with page ── */}
+      <div className="bg-[var(--paper)] border-b border-black/[0.05]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center gap-2 overflow-x-auto scrollbar-none">
           {categories.map((cat, i) => (
             <motion.div
               key={cat}
@@ -60,14 +60,14 @@ export default function Portfolio() {
               className={`px-4 py-1.5 rounded-full text-sm whitespace-nowrap cursor-default select-none border transition-colors duration-200 flex-shrink-0 ${
                 cat === "All"
                   ? "bg-[#080810] text-white border-[#080810]"
-                  : "text-[#6B7280] bg-[var(--paper)] border-black/[0.07] hover:border-black/20 hover:text-[#080810]"
+                  : "text-[#6B7280] bg-white border-black/[0.07] hover:border-black/20 hover:text-[#080810]"
               }`}
               style={{ fontFamily: "Syne, sans-serif", fontWeight: 500 }}
             >
               {cat}
             </motion.div>
           ))}
-          <span className="ml-auto text-xs text-[#9CA3AF] whitespace-nowrap pl-4 flex-shrink-0" style={{ fontFamily: "Syne, sans-serif" }}>
+          <span className="ml-auto text-xs text-[#B0B7C3] whitespace-nowrap pl-4 flex-shrink-0" style={{ fontFamily: "Syne, sans-serif" }}>
             Coming soon
           </span>
         </div>

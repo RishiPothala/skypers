@@ -53,7 +53,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080810] text-white/40 relative overflow-hidden">
+    <footer data-theme="dark" className="bg-[#080810] text-white/40 relative overflow-hidden">
       {/* Top glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-48 pointer-events-none"
         style={{ background: "radial-gradient(ellipse at top, rgba(26,79,255,0.09) 0%, transparent 70%)" }}

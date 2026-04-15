@@ -219,7 +219,7 @@ export default function Services() {
       </section>
 
       {/* PROCESS */}
-      <section className="py-28 px-6 relative overflow-hidden" style={{ background: "var(--ink)" }}>
+      <section data-theme="dark" className="py-28 px-6 relative overflow-hidden" style={{ background: "var(--ink)" }}>
         <div className="absolute inset-0 mesh-bg-dark" />
         <div className="absolute inset-0 pointer-events-none" style={{
           backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.018) 1px, transparent 1px)`,
@@ -263,7 +263,7 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-28 px-6 text-center relative overflow-hidden"
+      <section data-theme="dark" className="py-28 px-6 text-center relative overflow-hidden"
         style={{ background: "linear-gradient(135deg, #1A4FFF 0%, #4D7AFF 60%, #8AABFF 100%)" }}>
         <div className="absolute inset-0 pointer-events-none" style={{
           backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.055) 1px, transparent 1px)`,

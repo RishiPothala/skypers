@@ -78,7 +78,7 @@ export default function Contact() {
     <div className="w-full">
 
       {/* HEADER — dark cinematic */}
-      <section className="pt-28 pb-20 px-6 relative overflow-hidden" style={{ background: "var(--ink)" }}>
+      <section data-theme="dark" className="pt-28 pb-20 px-6 relative overflow-hidden" style={{ background: "var(--ink)" }}>
         <div className="absolute inset-0 mesh-bg-dark" />
         <div className="absolute inset-0 pointer-events-none" style={{
           backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.022) 1px, transparent 1px)`,
