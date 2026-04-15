@@ -159,7 +159,7 @@ export default function Home() {
 
         <motion.div
           style={{ y: heroY, opacity: heroOpacity }}
-          className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center"
+          className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 text-center w-full"
         >
           {/* Trust badge */}
           <motion.div
@@ -207,19 +207,21 @@ export default function Home() {
 
           {/* CTAs */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto"
+            initial={{ opacity: 0, y: 32 }}
+            animate={{ opacity: 1, y: -8 }}
+            transition={{ duration: 0.85, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
+            style={{ marginTop: "0.5rem", maxWidth: "420px" }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 mx-auto w-full"
           >
             <Link to="/contact" className="w-full sm:w-auto">
               <motion.button
                 whileHover={{ scale: 1.05, y: -3 }}
                 whileTap={{ scale: 0.97 }}
-                className="btn-primary text-base px-10 py-4 w-full sm:w-auto"
+                className="btn-primary text-base px-9 py-3.5"
+                style={{ width: "100%" }}
               >
                 Start a Project
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
                   <path d="M1 8H15M9 2L15 8L9 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </motion.button>
@@ -228,7 +230,8 @@ export default function Home() {
               <motion.button
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
-                className="btn-outline text-base px-10 py-4 w-full sm:w-auto"
+                className="btn-outline text-base px-9 py-3.5"
+                style={{ width: "100%" }}
               >
                 Explore Services
               </motion.button>
