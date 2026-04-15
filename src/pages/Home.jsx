@@ -161,23 +161,7 @@ export default function Home() {
           style={{ y: heroY, opacity: heroOpacity }}
           className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 text-center w-full"
         >
-          {/* Trust badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 16, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
-            className="inline-flex items-center gap-2.5 mb-9"
-          >
-            <span className="inline-flex items-center gap-2 bg-white/80 border border-black/[0.07] text-[#4B5563] text-[0.62rem] tracking-[0.18em] uppercase px-4 py-2 rounded-full shadow-sm backdrop-blur-sm"
-              style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
-            >
-              <span className="relative flex h-1.5 w-1.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-70"></span>
-                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-400"></span>
-              </span>
-              Accepting New Projects
-            </span>
-          </motion.div>
+
 
           {/* Headline */}
           <motion.h1
@@ -190,9 +174,9 @@ export default function Home() {
             We Build Digital
             <br />
             <em className="text-gradient not-italic">Products</em>{" "}
-            <span className="font-display font-light italic text-[#BCBCC8]">That</span>
+            <span className="font-display font-light italic" style={{ color: "#8B9FD4" }}>That</span>
             <br />
-            <span className="font-display font-light italic text-[#9CA3AF]">Perform.</span>
+            <span className="font-display font-light italic" style={{ color: "#6B84C4" }}>Perform.</span>
           </motion.h1>
 
           <motion.p
@@ -208,9 +192,9 @@ export default function Home() {
           {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 32 }}
-            animate={{ opacity: 1, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
-            style={{ marginTop: "0.5rem", maxWidth: "420px" }}
+            style={{ marginTop: "1.5rem", marginBottom: "2rem", maxWidth: "420px" }}
             className="flex flex-col sm:flex-row items-center justify-center gap-3 mx-auto w-full"
           >
             <Link to="/contact" className="w-full sm:w-auto">
